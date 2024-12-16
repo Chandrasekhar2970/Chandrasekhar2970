@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Chandra Sekhar Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- add icon link -->
+	<link rel="icon" href="./images/Logo.png" type="image/x-icon" />
+
+	<style>
+		/*======================================
+//--//-->   ABOUT
+======================================*/
+
+		.about-mf .box-shadow-full {
+			padding-top: 4rem;
+			padding-bottom: 4rem;
+		}
+
+		.about-mf .about-img {
+			margin-bottom: 2rem;
+		}
+
+		.about-mf .about-img img {
+			margin-left: 10px;
+		}
+
+		.skill-mf .progress {
+			/* background-color: #cde1f8; */
+			margin: .5rem 0 1.2rem 0;
+			border-radius: 0;
+			height: .7rem;
+		}
+
+		.skill-mf .progress .progress-bar {
+			height: .7rem;
+			background-color: #ffbd39;
+		}
+
+
+		/* Animation styles */
+		#typing-animation {
+			position: relative;
+			font-size: 30px;
+			font-weight: bold;
+			color: rgb(255, 255, 255);
+			overflow: hidden;
+			white-space: nowrap;
+			animation: typing 3s steps(20, end) infinite;
+		}
+
+		#typing-animation:before {
+			content: "";
+			/* position: absolute; */
+			top: 0;
+			left: 0;
+			width: 0;
+			height: 100%;
+			background-color: #ccc;
+			animation: typing-cursor 0.5s ease-in-out infinite;
+		}
+
+		@keyframes typing {
+			from {
+				width: 0;
+			}
+
+			to {
+				width: 100%;
+			}
+		}
+
+		@keyframes typing-cursor {
+			from {
+				width: 5px;
+			}
+
+			to {
+				width: 0;
+			}
+		}
+
+
+		/* project image zoom effect */
+
+		.zoom-effect {
+			overflow: hidden;
+			transition: transform 0.3s ease-out;
+		}
+
+		.zoom-effect:hover {
+			transform: scale(1.1);
+		}
+	</style>
+
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Gumpu Chandra Sekhar</a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+					<li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section id="home-section" class="hero">
+		<div class="home-slider  owl-carousel">
+			<div class="slider-item ">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+						data-scrollax-parent="true">
+
+						<div class="one-forth d-flex  align-items-center ftco-animate"
+							data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="subheading">Hello!</span>
+								<h1 class="mb-4 mt-3">I'm <span>Chandra Sekhar</span></h1>
+
+								<!-- Element to contain animated typing -->
+								<span id="typing-animation"></span>
+
+								<script>
+
+									// Initialize the typing animation
+									const typingAnimationElement = document.getElementById('typing-animation');
+
+									// Create an array of typing text
+									const typingTexts = [
+										' Data Analyst ',
+										' BI Developer ',
+										' AI Enthusiast ',
+									];
+
+									// Create a function to display the typing animation for a given text
+									function playTypingAnimation(text) {
+										// Loop through each character and add it to the element
+										for (let i = 0; i < text.length; i++) {
+											setTimeout(() => {
+												typingAnimationElement.textContent += text[i];
+											}, i * 200); // Increase the delay to slow down the typing animation
+										}
+
+										// Once the animation is complete, reset the text and start over
+										setTimeout(() => {
+											typingAnimationElement.textContent = '';
+											playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+										}, text.length * 200);
+									}
+
+									// Start the typing animation loop
+									playTypingAnimation(typingTexts[0]);
+
+								</script>
+
+								<br>
+								<br>
+								<h2>Data Analyst | AI Enthusiast</h2>
+								<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+								<!-- <br> -->
+								<p><a href="https://www.linkedin.com/in/chandra-sekhar-gumpu-3a7641205/"
+										class="btn btn-primary py-3 px-4">LinkedIn</a>
+									<a href="https://github.com/Chandrasekhar2970"
+										class="btn btn-white btn-outline-white py-3 px-4">GitHub</a>
+									<a href="https://drive.google.com/file/d/1r5E9lgnkThRg91-zQMo2juIPQgsvOYSb/view?usp=sharing"
+										class="btn btn-white btn-outline-white py-3 px-4">Resume</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!--   About Section-->
+	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+		<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+					<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+										<div class="about-img">
+											<img src="images/PassPhoto.jpg" class="img-fluid rounded b-shadow-a" alt="">
+										</div>
+									</div>
+									<!-- Details next to profile image -->
+									<div >
+										<div class="about-info">
+											<p><span class="title-s"></span> <span>Gumpu Chandra Sekhar</span></p>
+											<p><span class="title-s"> </span> <span>Data Analyst | AI Enthusiast</span>
+											</p>
+											<p><span class="title-s"> </span> <span>Looking for an entry-level Data
+													Analyst role </span>
+											</p>
+											<p><span class="title-s"></span> <span>Kurnool, Andhra Pradesh, India</span></p>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+
+								<p>I am Chandra Sekhar, a dedicated data analyst with a passion for transforming raw data
+									into meaningful insights.
+									I hold a Bachelor's degree in Electronics & Communication Engineering and have hands-on
+									experience in Excel, Power BI, Python, SQL,
+									and machine learning. My work involves real-life projects, focusing on data
+									visualization, statistical analysis, and dashboard creation.
+									I am a fast learner and an AI enthusiast, always eager to explore new technologies
+									and contribute to innovative solutions.
+									My goal is to leverage my skills to drive data-driven decision-making in a dynamic
+									organization.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span>
+									</li>
+									<li class="d-flex"><span>Education:</span> <span>B.Tech in Electronics & Communication Engineering<br>
+											Sri Venkateswara University College of Engineering</span></li>
+									<li class="d-flex"><span>Language:</span> <span> Telugu, English</span></li>
+									<li class="d-flex"><span>Programming Languages:</span> <span>: Python, HTML
+											&amp; CSS </span></li>
+									<li class="d-flex"><span>Tools:</span> <span>: Excel, Power BI, SQL, Power Query,
+											&amp; AI Tools </span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span> Data Analysis, Data
+											Visualization, Data Modeling, DAX, Analytical Thinking, Time Management,
+											&amp; Teamwork </span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, &amp; Listening Music </span></li>
+
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="10">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/chandra-sekhar-gumpu-3a7641205/"
+										class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Reasume section -->
+
+	<section class="ftco-section ftco-no-pb" id="resume-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Resume</h1>
+					<h2 class="mb-4">Resume</h2>
+					<p>Aspiring Data Analyst with a strong foundation in Data Analysis using Python, proficient in Python, MySQL, and 
+						Machine learning libraries such as TensorFlow, scikit-learn, and pandas.
+						Seeking to leverage technical skills and analytical expertise to drive data-driven insights and
+						support organizational growth. .</p>
+				</div>
+			</div>
+			<br>
+			<br>
+			<div class="row">
+				<h1 class="big-4">Education</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2020-2024</span>
+						<h2>B.Tech in ECE</h2>
+						<span class="position">Sri Venkateswara University College of Engineering, Tirupati</span>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2018 - 2020</span>
+						<h2>Intermediate</h2>
+						<span class="position">Narayana Junior College, Vijayawada</span>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center mt-5">
+				<div class="col-md-6 text-center ftco-animate">
+					<p><a href="https://drive.google.com/file/d/1r5E9lgnkThRg91-zQMo2juIPQgsvOYSb/view?usp=sharing"
+							class="btn btn-primary py-4 px-5">Download CV</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Project Section-->
+
+	<section class="ftco-section" id="project-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">PROJECTS</h1>
+					<h2 class="mb-4">Projects</h2>
+					<p>Here are sample Data Analytics projects utilizing Power BI, Python and Machine
+						Learning (ML).</p>
+				</div>
+			</div>
+
+			<!-- Project For Power BI-->
+
+			<h2 class="mb-4"> <a href="https://github.com/Chandrasekhar2970/Power-BI-Projects/tree/main"> Power BI Project</a></h2>
+
+
+
+			<!-- Zomato Sales Analytics Dashboard-->
+			<section style="width: 100%; max-width: 800px; margin: 0 auto; padding: 20px;">
+
+				<div style="margin-bottom: 40px;">
+
+					<!-- Power BI Dashboard Embed -->
+					<div style="position: relative; width: 100%; padding-top: 56.25%;"> <!-- 16:9 Aspect Ratio -->
+						<iframe title="Zomato Sales Analysis Dashboard"
+							src="https://app.powerbi.com/reportEmbed?reportId=414be624-9e3a-473a-a488-764cd10f4707&autoAuth=true&ctid=187cafb9-ad82-4105-8963-5501051382e0"
+							style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+							allowFullScreen="true">
+						</iframe>
+					</div><br>
+					<h2 class="project-title">
+						<a href="https://github.com/Chandrasekhar2970/Power-BI-Projects/tree/main/Zomato%20Dashboard"
+							target="_blank">Zomato Sales Analytics Dashboard</a>
+					</h2>
+
+					<p style="margin-top: 15px; line-height: 1.6;">
+						The Zomato Sales Analytics Dashboard is designed to provide Zomato and its restaurant partners with 
+						actionable insights into sales performance, order trends, user behavior, and city-level dynamics. By integrating 
+						SQL-based sales data, this dashboard empowers data-driven decision-making, enabling businesses to optimize 
+						pricing strategies, marketing campaigns, and overall operational efficiency. Key features include an overview 
+						of orders and sales city-wise, detailed user performance metrics, and a comprehensive analysis of city performance, 
+						allowing for targeted interventions and maximized revenue growth.
+					</p>
+				</div>
+			</section>
+
+
+
+
+
+				<!-- CSS for Styling the Title -->
+				<style>
+					.project-title {
+						font-size: 1.5em;
+						font-weight: regular;
+						color: white;
+						margin-bottom: 10px;
+					}
+
+					.project-title a {
+						text-decoration: none;
+						color: inherit;
+						/* keeps initial color black */
+					}
+
+					.project-title a:visited {
+						color: rgb(255, 255, 255);
+						/* keeps visited color black */
+					}
+
+					.project-title a:hover {
+						color: #febc39;
+						/* optional hover color */
+					}
+				</style>
+
+			</div>
+
+
+			<!-- Project For SQL
+
+			<h2 class="mb-4"> <a href="https://github.com/shaun-mia/SQL-Data-Analysis-Project-"> SQL Project</a></h2>
+			<div class="row d-flex">
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://github.com/shaun-mia/SQL-Data-Analysis-Project/tree/main/AD-HOC%20Requests%20%20Consumer%20Goods%20Domain%20%20SQL%20Project"
+							class="block-20 zoom-effect" style="background-image: url('images/sql_ad.webp');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a
+									href="https://github.com/shaun-mia/SQL-Data-Analysis-Project/tree/main/AD-HOC%20Requests%20%20Consumer%20Goods%20Domain%20%20SQL%20Project">
+									Consumer Goods Ad-Hoc</a></h3>
+							<p>This project serves as a comprehensive SQL analysis in the Consumer Goods sector,
+								specifically tailored to answer
+								ad-hoc business requests. Each SQL query provides a focused insight that supports
+								data-driven decisions,
+								from understanding market reach to analyzing product costs and sales trends.</p>
+						</div>
+					</div>
+				</div> -->
+				<!-- TAirbnb projkect-->
+				<!-- <div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://github.com/shaun-mia/SQL-Data-Analysis-Project/tree/main/AIRBNB%20Outlier%20Detection%20and%20EDA"
+							class="block-20 zoom-effect" style="background-image: url('images/airbnb.webp');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a
+									href="https://github.com/shaun-mia/SQL-Data-Analysis-Project/tree/main/AIRBNB%20Outlier%20Detection%20and%20EDA">
+									AIRBNB Outlier Detection and EDA</a></h3>
+							<p>TThe AIRBNB Outlier Detection and EDA project involved analyzing Airbnb listings to
+								identify anomalies in pricing,
+								customer satisfaction, and other metrics.This SQL-based project provided insights
+								through exploratory data analysis, helping to highlight patterns and outliers
+								for better decision-making..</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry">
+						<a href="https://github.com/shaun-mia/SQL-Data-Analysis-Project/tree/main/Cohort%20Analysis%20Using%20SQL"
+							class="block-20 zoom-effect" style="background-image: url('images/py_cohort.webp');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a
+									href="https://github.com/shaun-mia/SQL-Data-Analysis-Project/tree/main/Cohort%20Analysis%20Using%20SQL">
+									Cohort Analysis Using SQL </a></h3>
+							<p>This analysis aims to perform cohort analysis on an online retail dataset to track
+								customer
+								purchasing behavior over time. By grouping customers based on their first purchase date,
+								we can assess retention,
+								revenue patterns, and engagement.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry">
+						<a href="https://github.com/shaun-mia/SQL-Data-Analysis-Project/tree/main/Pizza%20Sales%20Analysis%20using%20SQL"
+							class="block-20 zoom-effect" style="background-image: url('images/pizza.webp');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a
+									href="https://github.com/shaun-mia/SQL-Data-Analysis-Project/tree/main/Pizza%20Sales%20Analysis%20using%20SQL">
+									Pizza Sales Analysis Using SQL </a></h3>
+							<p>The goal of this project is to analyze pizza sales data using SQL queries on multiple
+								related tables.
+								This will help reveal trends, revenue, customer preferences, and other key metrics.
+
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry">
+						<a href="https://github.com/shaun-mia/SQL-Data-Analysis-Project/tree/main/RFM%20Segmentation%20On%20Sales%20Data"
+							class="block-20 zoom-effect" style="background-image: url('images/sql_rfm.webp');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a
+									href="https://github.com/shaun-mia/SQL-Data-Analysis-Project/tree/main/RFM%20Segmentation%20On%20Sales%20Data">
+									RFM Segmentation on Sales Data </a></h3>
+							<p>This project performs RFM (Recency, Frequency, Monetary) segmentation on sales data to
+								categorize customers based on
+								their purchasing behavior. The RFM model helps identify key customer segments such as
+								Loyal Customers, Potential Churners, and Big Spenders.
+
+							</p>
+						</div>
+					</div>
+				</div>
+			</div> -->
+
+			<!-- Project For Excel -->
+
+			<!-- <h2 class="mb-4"> <a href="https://github.com/shaun-mia/Excel-Data-Analysis-Project"> Excel Project</a></h2>
+			<div class="row d-flex">
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://github.com/shaun-mia/Excel-dashboard-Project?tab=readme-ov-file#2-hr-attrition-dashboard"
+							class="block-20 zoom-effect"
+							style="background-image: url('images/Ex_HR\ Attirition\ Dasgboard.png');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a
+									href="https://github.com/shaun-mia/Excel-dashboard-Project?tab=readme-ov-file#2-hr-attrition-dashboard">HR
+									Attrition Analysis Dashboard</a></h3>
+							<p>HR Attrition Analysis Dashboard that provides insights into employee turnover trends.
+								The dashboard features data transformation, visualization, and key metrics analysis
+								using Power Query, Pivot Tables, and Excel.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://github.com/shaun-mia/Excel-dashboard-Project?tab=readme-ov-file#1-coffee-shop-sales-dashboard"
+							class="block-20 zoom-effect"
+							style="background-image: url('images/Ex_Coffee\ Shop\ Sales\ Dashboard.png');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a
+									href="https://github.com/shaun-mia/Excel-dashboard-Project?tab=readme-ov-file#1-coffee-shop-sales-dashboard">Coffee
+									Shop Sales Dashboard</a></h3>
+							<p>The Coffee Shop Sales Dashboard offers a detailed analysis of sales performance in a
+								coffee shop, focusing on product categories,
+								sales trends, and customer behavior.
+								This dashboard enables coffee shop owners to optimize their offerings and understand
+								their business dynamics better.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry">
+						<a href="https://github.com/shaun-mia/Excel-dashboard-Project?tab=readme-ov-file#3-retail-sale-analysis-dashboard"
+							class="block-20 zoom-effect" style="background-image: url('images/Ex_Retail\ Sale.png');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a
+									href="https://github.com/shaun-mia/Excel-dashboard-Project?tab=readme-ov-file#3-retail-sale-analysis-dashboard">Retail
+									Sale Analysis Dashboard </a></h3>
+							<p>The Retail Sale Analysis Dashboard evaluates sales performance across various regions,
+								product categories, and time periods.
+								It serves as a vital tool for retail managers to monitor sales trends, identify
+								top-selling products, and make informed decisions.</p>
+						</div>
+					</div>
+				</div>
+
+			</div> -->
+
+			<!-- Project For Python-->
+
+			<h2 class="mb-4" style="margin-left: 80px;"> <a href="https://github.com/shaun-mia/Python-Data-Analysis-Project-"> Python Project</a>
+			</h2>
+			<div class="row d-flex">
+				<div class="col-md-6 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end" style="padding: 40px; margin-left: 80px;">
+						<a href="https://github.com/Chandrasekhar2970/Bankruptcy_Prediction_Project"
+							class="block-20 zoom-effect" style="background-image: url('images/Bankruptcy\ Image.jpg');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a
+									href="https://github.com/Chandrasekhar2970/Bankruptcy_Prediction_Project">
+									Bankruptcy Prediction Model using Machine Learning</a></h3>
+							<p>
+								Developed a machine learning model to predict the risk of bankruptcy using financial and operational data.
+								Key steps included data cleaning, visualization, and model building with algorithms such as Logistic Regression, Decision Tree, 
+								Random Forest, SVM, and KNN classifiers.
+								Achieved high accuracy, particularly with the Random Forest Classifier, which attained an accuracy score of 99%.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end" style="padding: 40px; margin-right: 80px;">
+						<a href="https://github.com/Chandrasekhar2970/Car_Price_Prediction_ML_Model"
+							class="block-20 zoom-effect" style="background-image: url('images/Car\ Price\ Prediction.png');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a
+									href="https://github.com/Chandrasekhar2970/Car_Price_Prediction_ML_Model">
+									Car Price Prediction Model using Machine Learning</a></h3>
+							<p>
+								Objective: Developed a machine learning model to predict car prices based on various features. <br>
+								Tools & Libraries: Python, Scikit-learn, Pandas, Matplotlib, Seaborn. <br>
+								Results: Achieved an R-squared value of 81.5% on the training set and 78.7% on the testing set. <br>
+								Enhancements: Improved model accuracy using ensemble methods like Bagging, Random Forest, and XGBoost Regressor.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 d-flex ftco-animate">
+					<div class="blog-entry" style="padding: 40px; margin-left: 80px;">
+						<a href="https://github.com/Chandrasekhar2970/Feynn_Labs_Projects/tree/main/Project%20-%202.2"
+							class="block-20 zoom-effect" style="background-image: url('images/EV-Market.webp');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a
+									href="https://github.com/Chandrasekhar2970/Feynn_Labs_Projects/tree/main/Project%20-%202.2">
+									Electric Vehicle Market Segmentation using Clustering</a></h3>
+							<p>Identified 5 distinct customer segments for targeted marketing campaigns, allowing for personalized outreach and 
+								resource allocation. Provided data-driven insights, including a 1677% increase in EV registrations between 2017 and 2023 and a 0.9 
+								correlation between electric and hybrid vehicle adoptions. Visualizations and analysis presented to stakeholders, including time-series graphs, correlation matrices, and cluster 
+								heatmaps, informed strategic decision-making for the startup's launch in India. </p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end" style="padding: 40px; margin-right: 80px;">
+						<a href="https://github.com/Chandrasekhar2970/Store_Sales_Analysis"
+							class = "block-20 zoom-effect" style="background-image: url('images/Sales-Analysis.png');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a
+									href="https://github.com/Chandrasekhar2970/Store_Sales_Analysis">
+									Sales Store Analysis</a></h3>
+							<p>Sales analysis is the process of examining and evaluating sales data to gain insights into the performance 
+								of a company's products or services. It involves analyzing various aspects of sales, such as
+								trends, patterns, customer behavior, and performance metrics, to make informed business decisions.
+								Sales analysis helps companies understand their sales performance, identify areas of strength and
+								weakness, pinpoint opportunities for growth, and develop strategies to improve sales effectiveness.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- <div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://github.com/shaun-mia/Python-Data-Analysis-Project/tree/main/Amazon%20Sales%20Analysis"
+							class="block-20 zoom-effect" style="background-image: url('images/py_amazon_sales.webp');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a
+									href="https://github.com/shaun-mia/Python-Data-Analysis-Project/tree/main/Amazon%20Sales%20Analysis">
+									Amazon Sales Analysis</a></h3>
+							<p>This project involves an in-depth analysis of sales data to uncover insights into
+								customer behavior, product performance, and sales trends.
+								The analysis leverages various visualization techniques to represent data effectively
+								and make informed decisions.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="hhttps://github.com/shaun-mia/Python-Data-Analysis-Project/tree/main/Customer-Churn-analysis-main"
+							class="block-20 zoom-effect" style="background-image: url('images/py_cohort.webp');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a
+									href="https://github.com/shaun-mia/Python-Data-Analysis-Project/tree/main/Customer-Churn-analysis-main">
+									Customer Churn analysis</a></h3>
+							<p>The Customer Churn Analysis project aims to identify the key factors contributing to
+								customer churn and provide
+								actionable insights to enhance customer retention. The analysis leverages various data
+								science techniques,
+								including exploratory data analysis, feature engineering, and machine learning modeling.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://github.com/shaun-mia/Python-Data-Analysis-Project/tree/main/Fake_News_Detection_Using_ML"
+							class="block-20 zoom-effect" style="background-image: url('images/py_fake.webp');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a
+									href="https://github.com/shaun-mia/Python-Data-Analysis-Project/tree/main/Fake_News_Detection_Using_ML">
+									Fake News Detection Using ML</a></h3>
+							<p>The spread of misinformation through online platforms is a growing concern. Fake news can
+								have a significant negative impact on society, influencing public opinion and even
+								swaying elections.
+								This project aims to develop a machine learning model that can automatically classify
+								news articles as real or fake, aiding users in discerning reliable information.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://github.com/shaun-mia/Python-Data-Analysis-Project/tree/main/Google%20Play%20Store%20Apps%20Data%20Analysis"
+							class="block-20 zoom-effect" style="background-image: url('images/py_play.webp');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a
+									href="https://github.com/shaun-mia/Python-Data-Analysis-Project/tree/main/Google%20Play%20Store%20Apps%20Data%20Analysis">
+									Google Play Store Apps Data Analysis</a></h3>
+							<p>The purpose of this analysis is to explore, clean, and analyze the Google Play Store
+								dataset to gain insights into app ratings, categories, reviews,
+								and pricing. This project aims to answer various queries about the dataset and provide
+								statistical insights and visualizations to help understand
+								trends and patterns.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://github.com/shaun-mia/Python-Data-Analysis-Project/tree/main/Heart%20desiess"
+							class="block-20 zoom-effect" style="background-image: url('images/py_heart.webp');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a
+									href="https://github.com/shaun-mia/Python-Data-Analysis-Project/tree/main/Heart%20desiess">
+									Heart Disease Analysis </a></h3>
+							<p>This project analyzes a heart disease dataset to identify factors that influence the
+								likelihood of heart disease. Using Python, we explore data patterns,
+								visualize important features, and highlight the relationships between different health
+								indicators.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://github.com/shaun-mia/Python-Data-Analysis-Project/tree/main/Netflix%20%26%20IMDB%20Data%20Analysis"
+							class="block-20 zoom-effect" style="background-image: url('images/py_net.webp');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a
+									href="https://github.com/shaun-mia/Python-Data-Analysis-Project/tree/main/Netflix%20%26%20IMDB%20Data%20Analysis">
+									Netflix & IMDB Data Analysis</a></h3>
+							<p>This analysis of Netflix data provides insights into the distribution and growth of
+								movies and TV shows on the platform.
+								The project focuses on understanding content expansion by category and country,
+								analyzing target demographics, and identifying
+								the most popular genres and ratings across different regions.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://github.com/shaun-mia/Python-Data-Analysis-Project/tree/main/Police%20Vehicle%20Checking%20Analysis"
+							class="block-20 zoom-effect" style="background-image: url('images/py_vihecal.webp');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a
+									href="https://github.com/shaun-mia/Python-Data-Analysis-Project/tree/main/Police%20Vehicle%20Checking%20Analysis">
+									Police Vehicle Checking Analysis</a></h3>
+							<p>The purpose of this project is to analyze police vehicle stop data to uncover trends and
+								insights, particularly focusing on gender disparities, violation types, search rates,
+								and other factors that may affect the outcome of stops. Using Python for data
+								analysis allows us to perform detailed data cleaning, filtering, grouping, and
+								visualization, helping to understand how various factors influence police stops.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://github.com/shaun-mia/Python-Data-Analysis-Project/tree/main/Spotify%20music%20analysis"
+							class="block-20 zoom-effect" style="background-image: url('images/py_spotifiy.webp');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a
+									href="https://github.com/shaun-mia/Python-Data-Analysis-Project/tree/main/Spotify%20music%20analysis">
+									Spotify music analysis</a></h3>
+							<p>This project explores Spotify's audio data to uncover trends in song popularity,
+								duration, and genre characteristics over time.
+								Through data cleaning, analysis, and visualization, we aim to gain insights into
+								listener preferences and the evolution of music.</p>
+						</div>
+					</div>
+				</div> -->
+
+			</div>
+
+		</div>
+	</section>
+	<!-- Achivement to github section-->
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+		<div class="container">
+			<div class="row d-md-flex align-items-center">				
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="10">0</strong>
+							<span>Projects</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>More projects on<span> Github </span> </h2>
+					<div class="heading">
+						<br>
+						<p><a href="https://github.com/Chandrasekhar2970" class="btn btn-primary py-3 px-5">GitHub</a></p>
+					</div>
+				</div>
+			</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+	<!--Contact Section -->
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Contact</h1>
+					<h2 class="mb-4">Contact ME</h2>
+					<p>Below are the details to reach out to me!</p>
+				</div>
+			</div>
+
+			<div class="row d-flex contact-info mb-5">
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<a href="https://maps.app.goo.gl/ZqcKfpa9NzPFkJUi7	" target="_blank"
+							class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-map-signs"></span>
+						</a>
+						<h3 class="mb-4">Address</h3>
+						<p><a >Kurnool, Andhra Pradesh, India</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<a href="tel:+919492712970" class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-phone2"></span>
+						</a>
+						<h3 class="mb-4">Contact Number</h3>
+						<p><a href="tel:+919492712970">+91 9492712970</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<a href="mailto:chandrasekhargumpu9492@gmail.com"
+							class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-paper-plane"></span>
+						</a>
+						<h3 class="mb-4">Email Address</h3>
+						<p><a href="mailto:chandrasekhargumpu9492@gmail.com">chandrasekhargumpu9492@gmail.com</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<a href="https://drive.google.com/file/d/1r5E9lgnkThRg91-zQMo2juIPQgsvOYSb/view?usp=sharing"
+							target="_blank" class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-globe"></span>
+						</a>
+						<h3 class="mb-4">Download Resume</h3>
+						<p><a href="https://drive.google.com/file/d/1r5E9lgnkThRg91-zQMo2juIPQgsvOYSb/view?usp=sharing"
+								target="_blank">Resume Link</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<br>
+			<br>
+			
+			<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+				<li class="ftco-animate normal-txt">Find me on </li>
+				<li class="ftco-animate"><a href="https://github.com/Chandrasekhar2970" target="_blank"><span class="icon-github"></span></a>
+				</li>
+				<li class="ftco-animate"><a href="https://www.linkedin.com/in/chandra-sekhar-gumpu-3a7641205/" target="_blank"><span
+							class="icon-linkedin"></span></a></li>
+				<li class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=100058207262406" target="_blank"><span
+							class="icon-facebook"></span></a></li>
+				<li class="ftco-animate"><a href="https://www.instagram.com/chandrasekhar_9492/" target="_blank"><span
+							class="icon-instagram"></span></a></li>
+			</ul>
+			<br>
+		</div>
+		</div>
+	</section>
+
+
+	<!-- Footer section for all right -->
+
+	<footer class="ftco-footer ftco-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+
+					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						&copy;
+						<script>document.write(new Date().getFullYear());</script> All rights reserved | <a
+							href="https://www.linkedin.com/in/chandra-sekhar-gumpu-3a7641205" target="_blank">Chandra Sekhar</a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
